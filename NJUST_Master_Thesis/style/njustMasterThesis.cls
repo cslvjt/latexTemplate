@@ -45,3 +45,8 @@
 \setCJKmainfont{SimSun}
 %设置行距
 \linespread{1.5}
+
+%加载pdf文件
+\RequirePackage{pdfpages}
+
+%设置中文摘要格式
