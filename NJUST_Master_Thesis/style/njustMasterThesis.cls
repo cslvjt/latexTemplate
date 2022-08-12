@@ -11,12 +11,32 @@
 
 %设置标题格式
 \RequirePackage{titlesec}
-\titleformat{\chapter}{\bfseries\songtibold\zihao{-3}\raggedright}{\songtibold\arabic{chapter}}{1em}{}[]
-\titlespacing{\chapter}{0pt}{0pt}{18pt}
-\titleformat{\section}{\bfseries\songtibold\zihao{4}\raggedright}{\songtibold\arabic{chapter}.\arabic{section}}{1em}{}[]
-\titlespacing{\section}{0pt}{12pt}{12pt}
-\titleformat{\subsection}{\bfseries\songtibold\zihao{-4}\raggedright}{\songtibold\arabic{chapter}.\arabic{section}.\arabic{subsection}}{1em}{}[]
-\titlespacing{\subsection}{0pt}{6pt}{6pt}
+\ctexset{
+	chapter={
+		name={,},%标题前后词语 name={<前部分>,<后部分>}
+		number={\arabic{chapter}},%标题编号
+		format=\bfseries\songtibold\zihao{-3}\raggedright,%标题整体格式
+		aftername=\hspace{1em},%编号与标题之间的距离
+		beforeskip=0pt,%beforeskip控制标题与上面正文的距离。
+		afterskip=18pt%afterskip控制标题与下面正文的距离。
+	},
+	section={
+		name={,}, 
+		number={\arabic{chapter}.\arabic{section}},
+		format=\bfseries\songtibold\zihao{4}\raggedright,
+		aftername=\hspace{1em},
+		beforeskip=12pt,
+		afterskip=12pt
+	},
+	subsection={
+		name={,},
+		number={\arabic{chapter}.\arabic{section}.\arabic{subsection}},
+		format=\bfseries\songtibold\zihao{-4}\raggedright,
+		aftername=\hspace{1em},
+		beforeskip=6pt,
+		afterskip=6pt
+	}
+}
 
 %设置页眉页脚
 \RequirePackage{fancyhdr}
@@ -49,4 +69,15 @@
 %加载pdf文件
 \RequirePackage{pdfpages}
 
+
 %设置中文摘要格式
+\newenvironment{abstractZH}{
+	{
+	\fancyhead[L]{\songti\zihao{-5}硕士学位论文}
+	\fancyhead[R]{\songti\zihao{-5}论文标题}
+	}
+	\centering{
+		\bfseries\songtibold\zihao{-3}摘\hspace{12mm}要
+	}
+	\vspace{18pt}
+}{}

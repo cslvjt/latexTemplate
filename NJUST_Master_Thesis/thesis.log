@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.1.27)  11 AUG 2022 21:01
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.1.27)  12 AUG 2022 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -451,7 +451,8 @@ File: ppxetex.def 2020/01/28 v0.5q Pdfpages driver for XeTeX (AM)
 \AM@toc@title=\toks20
 \c@AM@survey=\count280
 \AM@templatesizebox=\box56
-)) (./thesis.aux)
+)) (./thesis.aux
+(./chapter/abstractZH.aux) (./chapter/chapter1.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
@@ -599,11 +600,10 @@ File: chapter/statement.pdf Graphic file (type pdf)
  [1
 
 ]
-\openout2 = `chapter/chapter1.aux'.
+\openout2 = `chapter/abstractZH.aux'.
 
 
-(./chapter/chapter1.tex
-第一章
+(./chapter/abstractZH.tex
 
 Package fontspec Info: Could not resolve font "SimSun/I" (it probably doesn't
 (fontspec)             exist).
@@ -630,21 +630,29 @@ Package fontspec Info: Font family 'SimSun(2)' created for font 'SimSun' with
 (fontspec)             <->"SimSun/OT:script=hani;language=dflt;embolden=2.17;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
+) [2
+
+]
+\openout2 = `chapter/chapter1.aux'.
+
+ (./chapter/chapter1.tex
+1
 [1
 
 
+
 ] [2]
-第二章
+2
 ) [3
 
-] [4] (./thesis.aux (./chapter/chapter1.aux)) ) 
+] [4] (./thesis.aux (./chapter/abstractZH.aux) (./chapter/chapter1.aux)) ) 
 Here is how much of TeX's memory you used:
- 10029 strings out of 479418
- 257610 string characters out of 5888105
- 543630 words of memory out of 5000000
- 27390 multiletter control sequences out of 15000+600000
+ 10072 strings out of 479418
+ 259699 string characters out of 5888105
+ 544395 words of memory out of 5000000
+ 27425 multiletter control sequences out of 15000+600000
  532700 words of font info for 57 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 63i,18n,100p,834b,582s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,18n,86p,834b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (5 pages).
+Output written on thesis.pdf (6 pages).
